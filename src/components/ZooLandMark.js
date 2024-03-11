@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 import React, { useState } from "react";
-// import imageSrc from "../../public/images/Zoos.svg";
+import imageSrc from "../images/Zoos.svg";
 
 const ZooList = [
   { name: "사자", address: "제3아프리카관" },
@@ -27,18 +28,21 @@ const ZooLandMark = () => {
 
   return (
     <div>
-      {/* <img
-        style={{ width: "100%", height: "954px" }}
-        src="	https://t1.daumcdn.net/thumb/R1280x0/?fname=http:/…ce/user/F27/image/SoMj0yAx3HeNvC5kiB4woWrfRG8.jpg"
-        alt="Zoo"
-      /> */}
       <h2>
         문제 1.
         <p>
-          검색어에 동물 이름 또는 장소명이 일치시 분홍색을 bold 처리하였습니다 .
+          동물원 지도 만들어 보았습니다.
+          <br />
+           검색어에 동물 이름 또는 장소명이 일치시 분홍색을 bold
+          처리하였습니다 .
         </p>
+        <img
+          style={{ width: "80%", height: "500px" }}
+          src={imageSrc}
+          alt="Zoo"
+        />
       </h2>
-      <h3 style={{ color: "rgb(256 145 214)" }}>동물원 검색 기능</h3>
+      <h3 style={{ color: "#508637" }}>[동물원 검색 기능]</h3>
       <input
         type="text"
         placeholder="동물을 검색하세요"
