@@ -31,10 +31,9 @@ const ZooLandMark = () => {
       <h2>
         문제 1.
         <p>
-          동물원 지도 만들어 보았습니다.
+          동물원 지도 검색기능을 만들어 보았습니다.
           <br />
-           검색어에 동물 이름 또는 장소명이 일치시 분홍색을 bold
-          처리하였습니다 .
+          검색어에 동물 이름 또는 장소명이 일치시 분홍색을 bold 처리하였습니다 .
         </p>
         <img
           style={{ width: "80%", height: "500px" }}
@@ -45,7 +44,7 @@ const ZooLandMark = () => {
       <h3 style={{ color: "#508637" }}>[동물원 검색 기능]</h3>
       <input
         type="text"
-        placeholder="동물을 검색하세요"
+        placeholder="동물or장소를 검색하세요"
         value={searchTerm}
         onChange={e => setSearchTerm(e.target.value)}
       />
